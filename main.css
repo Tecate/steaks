@@ -1,0 +1,166 @@
+header {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid black;
+  margin: 0 0 20px 0; }
+  header .brand {
+    color: purple;
+    display: inline-block;
+    padding-left: 10px; }
+  header .tagline {
+    display: inline-block;
+    padding: 0 0 0 10px; }
+  header h1 {
+    margin: 20px 0 0 0; }
+
+nav {
+  padding: 0 0 0 15%; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    background-color: #f8f8f8;
+    width: 100%;
+    display: table-row; }
+  nav li {
+    float: left; }
+    nav li a {
+      background-color: #f8f8f8;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 4px 16px;
+      text-decoration: none; }
+  nav a:hover {
+    background-color: white; }
+
+#landing {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 350px; }
+  #landing .container {
+    padding: 100px 0 100px 0;
+    display: flex;
+    color: white; }
+
+.pops {
+  font-family: 'Cabin', sans-serif;
+  font-size: 56px;
+  margin-left: 50px;
+  width: 60%;
+  text-align: center; }
+
+.pops-list {
+  width: 40%;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 24px;
+  border-left: 1px solid white; }
+  .pops-list ul {
+    list-style-type: none; }
+  .pops-list li {
+    padding: 5px; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto; }
+
+.p-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 0 0; }
+
+.p-title {
+  text-align: left;
+  padding: 0 1em 0 1em;
+  display: inline-block;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 32px;
+  margin: 20px 0 10px 0; }
+
+.p-hr {
+  height: 0px;
+  border-top: 1px solid #ccc;
+  flex-grow: 1;
+  margin-right: 3em; }
+
+p {
+  padding: 20px;
+  line-height: 1.6;
+  margin: 0; }
+
+.img-container {
+  display: flex;
+  height: 500px;
+  max-width: 1240px;
+  align-items: center;
+  justify-content: center; }
+
+.img1 {
+  background: url("img/solarpanels.jpg") no-repeat center center;
+  background-size: cover; }
+
+.img2 {
+  background: url("img/sleepypizza.jpg") no-repeat center center;
+  background-size: cover; }
+
+.img3 {
+  background: url("img/ass.jpg") no-repeat center center;
+  background-size: cover; }
+
+.img4 {
+  background: url("img/sleepypizza.jpg") no-repeat center center;
+  background-size: cover; }
+
+.img-item {
+  margin: 0 1% 0 1%;
+  width: 22%;
+  height: 500px; }
+
+.centered {
+  text-align: center; }
+
+hr {
+  margin: 0 3em 10px 3em;
+  border: 0;
+  background-color: #ccc;
+  height: 1px; }
+
+.img-title {
+  margin-top: 30px;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px; }
+
+.flex-idk {
+  display: flex;
+  height: 500px;
+  justify-content: center; }
+  .flex-idk p {
+    max-width: 20%;
+    max-height: 500px;
+    overflow-y: auto; }
+  .flex-idk span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px; }
+  .flex-idk div {
+    max-width: 30%;
+    height: auto;
+    flex-grow: 1; }
+  .flex-idk .img1 {
+    background: url("img/solarpanels.jpg") no-repeat center center;
+    background-size: cover; }
+  .flex-idk .img2 {
+    background: url("img/sleepypizza.jpg") no-repeat center center;
+    background-size: cover; }
+
+.darkbg {
+  background-color: #ccc;
+  width: 100%;
+  height: 300px;
+  padding: 20px 0 20px 0;
+  margin: 50px 0; }
+
+/*# sourceMappingURL=main.css.map */
