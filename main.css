@@ -93,9 +93,15 @@ p {
 .img-container {
   display: flex;
   height: 500px;
-  max-width: 1240px;
+  width: calc(100% - 80px);
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background: #000;
+  padding: 40px;
+  margin: 0 0 30px 0; }
+
+.img-item:hover {
+  box-shadow: 5px 5px 0px #333; }
 
 .img1 {
   background: url("img/solarpanels.jpg") no-repeat center center;
@@ -110,13 +116,18 @@ p {
   background-size: cover; }
 
 .img4 {
-  background: url("img/sleepypizza.jpg") no-repeat center center;
+  background: url("img/spider.jpg") no-repeat center center;
+  background-size: cover; }
+
+.img5 {
+  background: url("img/solarpanels.jpg") no-repeat center center;
   background-size: cover; }
 
 .img-item {
   margin: 0 1% 0 1%;
   width: 22%;
-  height: 500px; }
+  height: 500px;
+  border: 16px solid white; }
 
 .centered {
   text-align: center; }
@@ -136,7 +147,8 @@ hr {
 .flex-idk {
   display: flex;
   height: 500px;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 30px; }
   .flex-idk p {
     max-width: 20%;
     max-height: 500px;
@@ -155,6 +167,22 @@ hr {
   .flex-idk .img2 {
     background: url("img/sleepypizza.jpg") no-repeat center center;
     background-size: cover; }
+
+.float-left {
+  display: inline-block;
+  float: left; }
+
+.float-right {
+  display: inline-block;
+  float: right; }
+
+footer {
+  background-color: #f8f8f8;
+  color: #000;
+  width: 100%;
+  height: 150px;
+  margin: 30px 0 0 0;
+  font-size: 13px; }
 
 .darkbg {
   background-color: #ccc;
