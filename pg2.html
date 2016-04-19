@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie-edge">
+		<title></title>
+		<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pg2.css">
+		<link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+		<script src="jquery-1.12.3.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 class="brand">Scum Systems </h1><h2 class="tagline"> a place for steaks</h2>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Screenshots</a></li>
+					<li><a href="#">Overview</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Testing</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="slider">
+<figure>
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/taj-mahal.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/ibiza.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/ankor-wat.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+</figure>
+</div>
+		<div class="plans">
+			<div class="plans-item"><h2>$100</h2><p>Stuff and steak of that natures and also things and stuff ok yes we need to do something please ok my brain hurts am i dumb? i dont know please god i have no idea</p></div>
+			<div class="plans-item"><h2>$200</h2><p>Stuff and steak of that natures and also things and stuff ok yes we need to do something please ok my brain hurts am i dumb? i dont know please god i have no idea</p></div>
+			<div class="plans-item"><h2>$250</h2><p>Stuff and steak of that natures and also things and stuff ok yes we need to do something please ok my brain hurts am i dumb? i dont know please god i have no idea</p></div>
+			<div class="plans-item"><h2>$500</h2><p>Stuff and steak of that natures and also things and stuff ok yes we need to do something please ok my brain hurts am i dumb? i dont know please god i have no idea</p></div>
+		</div>
+		<div class="imgonleft">
+			<div class="imgonleft-img">wtf</div>
+			<div class="imgonleft-text">
+				<h1>Oh Jeesus</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit risus, ornare interdum sem ac, commodo tincidunt lacus. Phasellus sit amet turpis lorem. Sed justo eros, convallis ac nulla eu, lacinia fermentum libero. Nullam purus risus, mollis nec ex et, venenatis pretium magna. Nunc pellentesque, sapien a molestie aliquam, nisi dolor scelerisque mauris, non semper neque orci non purus. Donec porta purus massa, eget tincidunt tortor varius at. Cras porttitor vehicula odio, a aliquet erat viverra nec. Ut consectetur bibendum mauris. In vitae suscipit elit. Aliquam dui tortor, varius ac sodales sit amet, pulvinar sed ante. Aenean blandit eleifend lacus eget bibendum. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			</div>
+		</div>
+		<form id="contact-form" action="#" method="POST" enctype="multipart/form-data">
+			<div class="form-name form-item">
+				<input id="name" class="input" name="name" type="text" placeholder="Jim Dudeson" size="60" />
+			</div>
+			<div class="form-email form-item">
+				<input id="email" class="input" name="email" type="text" placeholder="jim@dudeson.net" size="60" />
+			</div>
+			<div class="form-message form-item">
+				<textarea id="message" class="input" name="message" placeholder="Hi! We'd like to work with you." rows="7" cols="60"></textarea>
+			</div>
+			<div class="form-item">
+				<input id="submit_button" class="form-item" type="submit" value="Send email" />
+			</div>
+		</form>
+		<section id="canvas1" class="map">
+		<iframe id="map_canvas1"
+			width="100%"
+			height="450"
+			frameborder="0" style="border:0"
+			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBV9tzTr9Puhqs5sdIU_l_kVKRwuDeN3sY&q=Space+Needle,Seattle+WA" allowfullscreen>
+		</iframe>
+			</section>
+		<script>
+    $(document).ready(function () {
+
+        // you want to enable the pointer events only on click;
+
+        $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#canvas1').on('click', function () {
+            $('#map_canvas1').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#map_canvas1").mouseleave(function () {
+            $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+    });
+</script>
+		<footer>
+			<div class="container">
+				<p class="float-left">Made with steak by steak.systems.</p><p class="float-right">Copyright stuff</p>
+			</div>
+		</footer>
+	</body>
+</html>
