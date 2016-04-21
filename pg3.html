@@ -16,6 +16,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				<script src="jquery-1.12.3.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -31,30 +32,31 @@
 				</ul>
 			</nav>
 		</header>
+		<h1 class="sect-head">What exactly do we do?</h1>
 		<div id="services">
 			<div class="service-item srv1">
 				<i class="material-icons">grade</i><h2>Team Leadership</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Datri Design Group will work with key stakeholders within the organization to ensure all steps and processes are implemented to create a turnkey project that can be maintained going forward. Through the development to final execution we function as an extension of your team to get you from point A to point B painlessly and seamlessly.</p>
 			</div>
 			<div class="service-item srv2">
 				<i class="material-icons">fingerprint</i><h2>Brand Marketing</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Our job is to understand your brands essence, and what it means to your customer. We will work with you to distill your vision and translate it into a retail program that deliver best results. We develop a plan of action that targets the right communication vehicle at the appropriate time to profile and leverage your brand effectively.</p>
 			</div>
 			<div class="service-item srv3">
 				<i class="material-icons">language</i><h2>Strategic Partnerships</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>We research, identify and investigate new opportunities with other organizations to find mutually beneficial areas to grow your business through strategic collaborations. We develop and foster partnerships that will leverage your brand and create incremental revenue opportunities.</p>
 			</div>
 			<div class="service-item srv4">
 				<i class="material-icons">build</i><h2>Product Development</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>When it comes to figuring out the right assortment, we consider all the details including sourcing, packaging, and final product production. Our experience spans across various categories such as menu and drink development, packaging, housewares and tabletop. We can design and package an exclusive custom program of products or menu items that deliver on your brand and resonate with your customer.</p>
 			</div>
 			<div class="service-item srv5">
 				<i class="material-icons">visibility</i><h2>Visual Merchandising</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>We work with store designers and operation teams to ensure the brand essence that we developed in the products are then carried throughout every touch point the customer sees for effective merchandising solutions.</p>
 			</div>
 			<div class="service-item srv6">
 				<i class="material-icons">assignment</i><h2>Market Planning</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>We know the devil is in the details and the strategy is only as good as how it's executed, this is why we work closely with your team to ensure we operationalize and communicate every part of the plan for go to market success.</p>
 			</div>
 		</div>
 		<div id="slidein">
@@ -70,19 +72,31 @@
 				<div class="bg si3"></div>
 				<p>Duo in purto fastidii suavitate, te nihil iudico nam. Eros dolores at usu, ea offendit nominati delicatissimi per. An duo nulla appareat, usu iusto conceptam inciderint eu, sit quodsi ponderum instructior eu. Pri ad audire deterruisset, eum in inermis vulputate, soluta constituam et eum. Mel an magna omnis, vel vidit fugit ne, ad enim posidonium eos. Quo ea causae ancillae imperdiet. Usu veri nusquam at, est mediocrem deseruisse te.</p>
 			</div>
-			<div class="slideitem">
-				<div class="bg si4"></div>
-				<p>Duo in purto fastidii suavitate, te nihil iudico nam. Eros dolores at usu, ea offendit nominati delicatissimi per. An duo nulla appareat, usu iusto conceptam inciderint eu, sit quodsi ponderum instructior eu. Pri ad audire deterruisset, eum in inermis vulputate, soluta constituam et eum. Mel an magna omnis, vel vidit fugit ne, ad enim posidonium eos. Quo ea causae ancillae imperdiet. Usu veri nusquam at, est mediocrem deseruisse te.</p>
-			</div>
-			<div class="slideitem">
-				<div class="bg si5"></div>
-				<p>Duo in purto fastidii suavitate, te nihil iudico nam. Eros dolores at usu, ea offendit nominati delicatissimi per. An duo nulla appareat, usu iusto conceptam inciderint eu, sit quodsi ponderum instructior eu. Pri ad audire deterruisset, eum in inermis vulputate, soluta constituam et eum. Mel an magna omnis, vel vidit fugit ne, ad enim posidonium eos. Quo ea causae ancillae imperdiet. Usu veri nusquam at, est mediocrem deseruisse te.</p>
-			</div>
 		</div>
 		<footer>
 			<div class="container">
 				<p class="float-left">Made with steak by steak.systems.</p><p class="float-right">Copyright stuff</p>
 			</div>
 		</footer>
+		<script>
+			;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
+
+
+
+$(".bg").inViewport(function(px){
+    if(px) $(this).addClass("anim") ;
+});
+		</script>
 	</body>
 </html>

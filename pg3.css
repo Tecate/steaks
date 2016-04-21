@@ -1,0 +1,122 @@
+.sect-head {
+  text-align: center; }
+
+#services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 25px auto;
+  max-width: 1240px; }
+  #services .material-icons {
+    font-size: 56px;
+    color: #999; }
+
+.service-item {
+  flex-basis: 350px;
+  padding: 10px;
+  margin-bottom: 30px;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0; }
+  .service-item h2 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    word-wrap: break-word;
+    max-width: 240px;
+    min-height: 56px;
+    background-color: yellow;
+    vertical-align: top;
+    width: 220px;
+    word-spacing: 55px; }
+
+.srv2 {
+  -webkit-animation-delay: 0.5s; }
+
+.srv3 {
+  -webkit-animation-delay: 1s; }
+
+.srv4 {
+  -webkit-animation-delay: 1.5s; }
+
+.srv5 {
+  -webkit-animation-delay: 2s; }
+
+.srv6 {
+  -webkit-animation-delay: 2.5s; }
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+#slidein {
+  display: flex;
+  flex-direction: column; }
+
+.slideitem {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 5px; }
+  .slideitem p {
+    margin: 0 auto;
+    max-width: 1240px; }
+
+@-webkit-keyframes push-bg {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0);
+    transfrom: translateX(0); } }
+.bg {
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #333;
+  z-index: -1;
+  /*
+      -webkit-animation-name: push-bg;
+  	-webkit-animation-duration: 1s;
+  	-webkit-animation-delay: 0.5s;
+  	-webkit-animation-timing-function: ease-out;
+  	-webkit-animation-iteration-count: 1;*/ }
+
+.anim {
+  -webkit-animation: push-bg 1s ease-out 0.5s 1;
+  -webkit-animation-fill-mode: forwards; }
+
+/*
+.si1 {
+//	background: url('img/ass.jpg') 0% 0% repeat;
+	-webkit-animation-delay: 0.5s;
+}
+.si2 {
+//	background: url('img/OS9.jpg') 0% 0% repeat;
+	-webkit-animation-delay: 1s;
+}
+.si3 {
+//	background: url('img/solarpanels.jpg') 0% 0% repeat;
+	-webkit-animation-delay: 1.5s;
+}
+.si4 {
+//	background: url('img/spider.jpg') 0% 0% repeat;
+	-webkit-animation-delay: 2s;
+}
+.si5 {
+//	background: url('img/sleepypizza.jpg') 0% 0% repeat;
+	-webkit-animation-delay: 2.5s;
+}
+*/
+
+/*# sourceMappingURL=pg3.css.map */

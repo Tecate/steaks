@@ -1,3 +1,6 @@
+.sect-head {
+		text-align: center;
+}
 #services {
 		display: flex;
 		flex-direction: row;
@@ -5,7 +8,7 @@
 		justify-content: space-around;
 		align-content: space-around;
 		margin: 25px auto;
-		width: 1240px;
+		max-width: 1240px;
 		.material-icons {
 				font-size: 56px;
 				color: #999;
@@ -13,7 +16,7 @@
 }
 
 .service-item {
-		flex-basis: 300px;
+		flex-basis: 350px;
 		padding: 10px;
 		margin-bottom: 30px;
     -webkit-animation-name: fade-in;
@@ -66,7 +69,7 @@
 		margin-bottom: 5px;
 		p {
 				margin:  0 auto;
-				width: 1240px;
+				max-width: 1240px;
 		}
 }
 
@@ -75,16 +78,19 @@ $start-width: -100%;
 @-webkit-keyframes push-bg {
 	from {
 		-webkit-transform: translateX($start-width);
+		transform: translateX($start-width);
 	}
 	to { 
 		-webkit-transform: translateX(0);
+		transfrom: translateX(0);
 	}
 }
 
 .bg{
     position: absolute;
 	-webkit-transform: translateX($start-width);
-    left: 0;
+	transform: translateX($start-width);
+	left: 0;
     right: 0;
     top: 0;
     bottom: 0;
@@ -92,14 +98,19 @@ $start-width: -100%;
 		background: #333;
 	z-index: -1;
     
+/*
     -webkit-animation-name: push-bg;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-delay: 0.5s;
 	-webkit-animation-timing-function: ease-out;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;*/
+
 }
 
+.anim {
+		-webkit-animation: push-bg 1s ease-out 0.5s 1;		-webkit-animation-fill-mode: forwards;
+}
+/*
 .si1 {
 //	background: url('img/ass.jpg') 0% 0% repeat;
 	-webkit-animation-delay: 0.5s;
@@ -120,3 +131,4 @@ $start-width: -100%;
 //	background: url('img/sleepypizza.jpg') 0% 0% repeat;
 	-webkit-animation-delay: 2.5s;
 }
+*/

@@ -1,0 +1,49 @@
+#blog {
+		background: #f8f8f8;
+}
+
+.blog-post {
+		background: url('img/santa.jpg') no-repeat center center;
+		background-size: cover;
+		min-height: 300px;
+		margin-bottom: 50px;
+}
+
+.blog-post-head {
+		display: flex;
+	background: rgba(0,0,0,0.3);
+}
+
+.post-head {
+		padding: 0 20px 0 20px;
+		text-shadow: 3px 3px 3px #888;
+}
+
+.blog-title {
+		color: white;
+		width: 80%;
+		font-family: 'Istok Web', sans-serif;
+		font-size: 32px;
+}
+
+.blog-date {
+		color: white;
+		width: 20%;
+		text-align: right;
+		color: #f8f8f8;
+		margin-top: 30px;
+		line-height: 30px;
+}
+
+.blog-content {
+		background: rgba(0,0,0,0.8);
+		color: white;
+		padding: 20px;
+		p {
+				padding: 5px 0 5px 0;
+		}
+}
+
+.blog-img {
+	
+}
